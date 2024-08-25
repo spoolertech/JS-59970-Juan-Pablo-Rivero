@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Nunito+Sans:ital,opsz,wght@0,6..12,800;1,6..12,800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Baskervville SC", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    background-color: pink;
+}
+
+h1 {
+    padding: 1rem;
+}
+.marco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: rgba(182, 157, 205, 0.351);
+
+}
+
+.parrafo-cuadro {
+    padding: 2rem;
+    background-color: rgb(221, 151, 162);
+    border-radius: 15px;
+
+}
+
+.parrafo {
+
+    padding: 1rem;
+    text-align: center;
+    font-weight: 400;
+
+
+}
+
+.parrafo2 {
+    background-color: rgb(221, 151, 162);
+    text-align: center;
+    font-weight: 400;
+}
+h3 {
+    padding: 0.3rem;
+}
+
+.tablaimc {
+    width: 600px;
+    border-radius: 15px;
+    padding: 1rem;
+    background-color: rgb(154, 183, 183);
+}
