@@ -27,7 +27,7 @@ function mostrarResultado(imc, estado) {
     alert(`Tu Masa Corporal es ${imc.toFixed(2)} y estás en la categoría: ${estado}.`);
 }
 
-// Bucle principal para manejar el flujo
+// Bucle principal
 let repetir;
 do {
     let peso, altura;
@@ -36,7 +36,7 @@ do {
     do {
         // Pedir peso y altura
         peso = parseFloat(prompt('Coloca tu peso en kilogramos:'));
-        if (peso === null || altura === null) {
+        if (peso === null) {
             // Si el usuario presiona Cancelar, salir del bucle principal
             alert('Operación cancelada.');
             break;
@@ -59,8 +59,6 @@ do {
     } while (true);
 
 
-
-
     // Calcular Masa Muscular
     let imc = calcularIMC(peso, altura);
     let estado = resultadoIMC(imc);
@@ -72,11 +70,11 @@ do {
     console.log(`Cálculo de tu masa corporal (IMC):`);
     console.log(`Si Pesas: ${peso} kg`);
     console.log(`y Medis: ${altura} Mts`);
-    console.log(`Tu Masa Muscular es de: ${imc.toFixed(2)}`);
+    console.log(`Tu Masa Corporal es de: ${imc.toFixed(2)}`);
     console.log(`Estado: ${estado}`);
 
-    // Preguntar al usuario si desea realizar otro cálculo
-    repetir = prompt('¿Deseas calcular otro IMC? (sí/no)').toLowerCase();
+    // Preguntar al usuario si quiere realizar otro cálculo
+    repetir = prompt('¿Queres calcular otro Indice de Masa Corporal? (sí/no)').toLowerCase();
 
 } while (repetir === 'sí' || repetir === 's');
 
