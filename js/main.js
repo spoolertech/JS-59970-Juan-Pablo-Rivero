@@ -35,14 +35,14 @@ do {
     // Bucle para validar el peso
     do {
         // Pedir peso y altura
-        peso = parseFloat(prompt('Coloca tu peso en kilogramos:'));
+        peso = parseFloat(prompt('Coloca tu peso en kilogramos: Ej 83.5'));
         if (peso === null) {
             // Si el usuario presiona Cancelar, salir del bucle principal
             alert('Operación cancelada.');
             break;
         }
 
-        altura = parseFloat(prompt('Coloca tu altura en metros:'));
+        altura = parseFloat(prompt('Coloca tu altura en metros: Ej 1.78'));
         if (altura === null) break;
 
 
